@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da adivinhação</title>
     <link rel="stylesheet" href="style.css">
+   
+
 </head>
 <body>
 
@@ -23,14 +25,22 @@
         <h3>Digite um número:</h3>
 
      
-     <input type="number" id="palpite" >
+     <input type="number" id="palpite" min="1" max="100" >
      <br>
 
-     <button onclick="" >Enviar palpite</button>
+     <button id="chute">Enviar palpite</button>
      <br>
+
      
+     <p id="dicas" class="dicas"></p>
+    
+        
+     <p id="tentativas" class="tentativas"></p>
+
+     <button id="reiniciar" style="display:none">Reiniciar jogo</button>
     </div>
 
+ <script src="jogo.js"></script>
 
 </body>
 </html>
